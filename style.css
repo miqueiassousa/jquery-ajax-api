@@ -1,0 +1,119 @@
+/* Estilo geral */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5; /* Fundo claro */
+    color: #333;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave para um visual mais clean */
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #00796b;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Botões */
+button {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transição suave */
+}
+
+button:hover {
+    background-color: #004d40; /* Cor mais escura quando o botão é hover */
+    transform: scale(1.05); /* Pequeno efeito de escala */
+}
+
+/* Área de conteúdo */
+#conteudo {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    display: none; /* Inicialmente escondido */
+}
+
+/* Estilo para o card de contato */
+.contact-card {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    display: inline-block;
+    width: 80%;
+    max-width: 350px;
+    text-align: center;
+    transition: transform 0.3s ease; /* Transição suave para animações */
+}
+
+.contact-card:hover {
+    transform: translateY(-10px); /* Efeito de elevação no hover */
+}
+
+.user-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+p {
+    font-size: 1rem;
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Modo escuro */
+.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode .container {
+    background-color: #444;
+}
+
+.dark-mode button {
+    background-color: #4caf50;
+    color: #333;
+}
+
+.dark-mode .contact-card {
+    background-color: #555;
+}
+
+/* Animação de zoom */
+.zoom-in {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
